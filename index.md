@@ -21,6 +21,4 @@ Description
 **Referenced in:** Section [4.1] / Figure [4]
 
 
-**Rotating:** [rotate_box_coma.mp4](figures/rotate_box_coma.mp4)
-
-![Rotating animation of the Coma Cluster and Stickman](figures/rotate_box_coma.mp4){width=100%}
+![Evolution of an A5 cluster:](figures/A5_1_000_010.mp4){width=100%}
