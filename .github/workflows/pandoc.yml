@@ -1,0 +1,28 @@
+name: Deploy pages
+on:
+    push:
+        branches:
+          - main
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: prepare
+              run: |
+                mkdir -p build
+                touch build/.nojekyll   
+            - name: pandoc
+              uses: docker://pandoc/core:2.12
+              with:
+                args: >-
+                  index.md --css css/style.css -s --mathjax -t html5 -o index.html
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: .
+                publish_branch: gh-pages
+
+
