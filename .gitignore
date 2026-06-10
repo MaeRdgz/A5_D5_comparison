@@ -1,0 +1,6 @@
+makefile
+*.xcodeproj
+*.bin
+Literature
+*.svg
+
