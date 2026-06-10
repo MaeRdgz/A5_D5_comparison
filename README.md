@@ -1,3 +1,3 @@
 # Caustics of the local universe
 
-See the documentation https://jfeldbrugge.github.io/Caustics-Local-Universe/
+See the documentation https://maerdgz.github.io/A5_D5_comparison/
